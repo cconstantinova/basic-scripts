@@ -10,7 +10,9 @@ deb https://pkg.jenkins.io/debian binary/
 # Add the repoaitory key to your system
 wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
 
-sudo apt-get update
-sudo apt-get install jenkins
+# Install jenkins application
+sudo apt install jenkins
+
+# Start and check jenmins service
 sudo systemctl start jenkins
 sudo systemctl status jenkins
